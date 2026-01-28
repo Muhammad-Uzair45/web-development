@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form mini Project</title>
+</head>
+<body>
+    <form>
+        <h3>Job Application: Senior WEb Developer</h3>
+        <p>Thank you for your interest in joining our team. Please fill out the application below.</p>
+  <hr>
+        <h2>Personal Information</h2>
+   <label for="name">FUll Name:</label><br>
+   <input type="text" name="username" id="name" ><br><br>
+   <label>Email:</label><br>
+   <input type="email" name="email"><br><br>
+   <label>Phone:</label><br>
+   <input type="tel" name="phone" required><br><br>
+   <label>LinkedIn Profile Url:</label><br>
+   <input type="url" name="linkedin url" placeholder="http://linkedin.com/in/yo">
+   <hr>
+   <h2> Professional Experience </h2>
+   <p>Upload Your Resume(Pdf or Docx):</p>
+   <input type="file" name="Resume"><br><br>
+   <label>cover latter:</label><br>
+   <textarea name="Cover latter"  cols="19" rows="5" placeholder=" Tell us you're a great fit for this role..."></textarea>
+   <p>Years of Professional Experience:</p> 
+   <input type=""><br><br>
+   <label> Earlist Possible Start Date:</label><br>
+   <input type="date" name="Date"> <br><br>
+   <hr> 
+   <h2>Skills & Availability</h2>
+   <p>Primary Skillset( Choose One):</p>
+   <input type="radio" name="Skills" value="Frontend">Frontend Development <br>
+   <input type="radio" name="Skills" value="Banked">Backend Development <br>
+   <input type="radio" name="Skills"  value="Full-Stack">Full-Stack Development <br><br>
+     <label>Addtional Skills(Select all that apply):</label> <br>
+   <input type="checkbox" name="React">React   <br>
+    <input type="checkbox" name="Node.js">Node.js <br>
+    <input type="checkbox" name="DBMS">DBMS  <br><br>
+    <label>Preferd Work Type:</label><br>
+    <select name="work-type" >
+     <option value="full time" >Full Time</option>
+     <option value="half time">Half Time</option>
+     <option value="evening">Evening</option>
+    </select>
+   <hr>
+   <h2>Final Conformation</h2>
+   <input type="checkbox" value="agree">I am legally authorized to work in this country. 
+   <P>How did you here about us?</P>
+   <input type="text" name="reference" placeholder="e.g, linkedin,compnay"><br><br>
+  <button>submit Application</button>
+     <input type="reset" value="Clear Form">
+
+</form>
+ 
+</body>
+</html>
