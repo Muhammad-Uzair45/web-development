@@ -1,0 +1,36 @@
+/* Element selector */
+
+h2{
+    background-color: aqua;
+    color: brown;
+}
+ol{
+    color: blue;
+    background-color: chartreuse;
+}
+
+/* Id selecter */
+/* #first{
+    color: blueviolet;
+}
+#second{
+    color: rgb(150, 68, 6);
+} */
+
+/* Class selecter */
+
+/* .myclass{
+    color: blue;
+} */
+ /* Group selecter */
+
+ /* h1,h2 ,.myclass{
+    color: crimson;
+    background-color: aqua;
+ } */
+
+ /* universal selecter */
+ /* *{
+    color: blueviolet;
+    background-color: chartreuse;
+ } */
