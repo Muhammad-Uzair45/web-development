@@ -1,0 +1,19 @@
+.box{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(19, 227, 158);
+    border: 8px blue solid;
+    padding: 25px;
+    margin: 10px;
+    /* display: block;   */    
+    /* display: inline;  (in this case we cannot set height and width)  */
+    display: inline-block;
+    /* display:inline-block  (in this case we set easyli height&width and inline property use */
+
+}
+#div2{
+    /* if display none the box2 remove and box3 use a space of box2  */
+    display: none;
+    /* if visibility hiddien the box2 hide But space use */
+    /* visibility:hidden; */
+}
