@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    height:4000px;
+    background-color: rgb(13, 45, 13);
+}
+
+
+
+#first{
+    background-color: aqua;
+    width:100px;
+    height:100px;
+    position: static;    /* No change because the position is by deafult static*/
+    top: 500px;
+}
+#sec{
+    background-color:blue;
+    width:100px;
+    height:100px;
+    position: relative;  /*this is change his real position  Note and use his space*/
+    /* top:10px; */
+    /* bottom: 50px; */
+    left:400px;
+}
+#third{
+    background-color:blueviolet;
+    width:100vw;
+    height:40px;
+    position:fixed;
+    /* left: 300px; */
+    bottom:  0px;
+}
+#four{
+    background-color:gold;
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:50px;
+    left: 200px;
+    /* z-index: -1; */
+    
+}
+p{
+    color: blue;
+    position: sticky;
+    top: 0px;
+    /* left:40px; */
+}
