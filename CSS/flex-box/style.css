@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.box{
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    padding: 3px;
+    margin: 3px;
+    border: 3px solid rgb(10, 10, 11);
+    
+}
+#container{
+    /* height: 300px; */
+    /* width: 300px; */
+    border: 2px solid black;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items:end; */
+    align-items: center;
+    /* align-content: center; */
+    /* gap: 10px; */
+
+
+}
+#box1{
+    background-color: aqua;
+    /* flex-grow: 2; */
+}
+#box2{
+    background-color:darkkhaki;
+    /* flex-grow: 1; */
+    /* order: 4; */
+}
+#box3{
+    background-color: aquamarine;
+    /* align-self: center; */
+    flex-shrink: 2;
+}
+#box4{
+    background-color: chartreuse;
+}
