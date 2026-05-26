@@ -1,0 +1,39 @@
+.container{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+/* button:hover{
+    transform: scale(1.1);
+    rotate: (45deg);
+}
+button:active{
+    background-color: rgb(53, 53, 214);
+} */
+.box{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+}
+.box:hover{
+    /* transform:rotate(45deg)    */
+    transform: scale(1.1);
+    /* transform:skew(40deg) */
+    /* transform:translateY(100px) */
+    /* transform: rotate(45deg)  scaleX(2) translate(60px, 100px); */
+    /* transition-property: all;
+    transition-timing-function:step-start
+    transition-duration: 1s;
+
+     transition-delay: 0.2s; */
+     transition: all 0.2s ease-in-out 0.2s ;
+     
+    
+}
+.box:active{
+    background-color: rgb(218, 218, 23);
+}
