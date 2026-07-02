@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: boder-box; 
+    font-family: Arial, sans-serif;
+}
+#nav_bar{
+    height: 60px;
+    background-color: #0F1111;
+    color: white;
+    display: flex;
+    align-items: center;
+     
+}
+.nav_logo{
+    height: 50px;
+    width:113px;
+    display: flex;
+    margin: 1px;
+    padding: 1px 8px 0px 6px;
+
+}
+
+
+img{
+    height: 50px;
+    width: 113px;
+    
+} 
+ .border{
+    border: 2px solid transparent;
+ }
+ .border:hover{
+    border: 1px solid white;
+ }
+
+ /* sencond item location deliver to*/
+ .nav-line1{
+    position: relative;
+    left: 25px;
+    color: #CCCCCC;
+    font-size: 0.75rem;
+ }
+ .nav-line2{
+    color: #FFFFFF;
+ }
+ .loca_logo{
+    margin: 5px 2px 5px 0px;
+    padding: 0px 9px;
+ }
+ 
