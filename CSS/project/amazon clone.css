@@ -4,12 +4,18 @@
     border: boder-box; 
     font-family: Arial, sans-serif;
 }
+body{
+   background-color: #e3e6e6;;
+}
 #nav_bar{
     height: 60px;
     background-color: #0F1111;
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+
+    
      
 }
 .nav_logo{
@@ -28,7 +34,7 @@ img{
     
 } 
  .border{
-    border: 2px solid transparent;
+    border: 1px solid transparent;
  }
  .border:hover{
     border: 1px solid white;
@@ -39,13 +45,249 @@ img{
     position: relative;
     left: 25px;
     color: #CCCCCC;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
  }
  .nav-line2{
     color: #FFFFFF;
+    font-size: 0.90rem;
+    font-weight: 600;
  }
  .loca_logo{
-    margin: 5px 2px 5px 0px;
-    padding: 0px 9px;
+    /* margin: 5px 2px 5px 0px;
+    padding: 0px 9px; */
  }
- 
+
+ /* Third item select all */
+ .nav-search{
+   display: flex;
+   margin-right: 20px;
+}
+/* .border-stlye{
+      border: 2px solid yellow;
+} */
+.border-style:hover{
+      border: 2px solid rgba(255, 255, 0, 0.822);
+
+}
+ .select-option{
+   height: 40px;
+   width: 55px;
+   border: none;
+   text-align: center;
+   background-color: rgba(240, 248, 255, 0.89);
+   
+   
+ }
+ .input-search{
+   width: 500px;
+   border: none;
+ }
+ .search-icon{
+    height: 40px;
+   width: 45px;
+   background-color: orange;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+
+ }
+
+
+ /* accounts and lists */
+ .hello-signin-account-list{
+   margin-right: 20px;
+ }
+
+.hello-sign-size{
+  font-size: 0.80rem;
+}
+.account-list-size{
+   font-size: 0.90rem;
+   font-weight: 600;
+}
+/* cart */
+.cart-icon{
+   font-size: 1.5rem;
+   
+}
+.num-on-cart{
+   position: relative;
+   left: 10px;
+   top: 3px;
+   color: #f08804;
+   font-weight: bolder;
+   font-size: 1.1rem;
+}
+/* nav-pannel */
+.nav-pannel{
+   background-color: #232F3e;
+   height: 40px;
+   color: white;
+   display: flex;
+   align-items: center;
+
+
+}
+.nav-option{
+   display: flex;
+}
+ .text-deco a{
+
+margin: 10px;
+padding: 8px 5px;
+text-decoration: none;
+color: white;
+font-size: 0.85rem;
+font-weight: bold;
+}
+.menu-all i{
+   font-size: 1.3rem;
+}
+.menu-all span{
+   font-weight: bold;
+   font-size: 0.9rem;
+   margin-right: 10px;
+
+}
+
+/* hero section */
+.hero-section{
+   background-image: url("images/hero.jpg");
+   background-size: cover;
+   height: 400px;
+   
+}
+.box{
+   background-color: white;
+   height: 400px;
+   width: 300px;
+   margin: 5px;
+   
+
+}
+.shopping-product{
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   position: relative;
+   bottom:200px;
+}
+
+.img-container{
+   background-size: cover;
+   height: 250px;
+   width: 270;
+   margin: 5px 15px;
+
+
+
+}
+
+
+.image-header{
+   margin: 0px 8px;
+   padding: 2px;
+}
+
+
+/* four image box */
+
+.img-box {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin: 10px;
+   gap: 15px;
+
+}
+.img-box img{
+   height:110px;
+   width: 100%;
+   object-fit:cover;
+   margin-top: 8px;
+}
+.img-box p{
+   font-size: 0.8rem;
+}
+.imgBottom-foot{
+   text-decoration: none;
+   color: rgb(101, 109, 207);
+   position: relative;
+   top: 5px;
+   margin: 15px;
+   font-size: 0.9rem;
+   
+}
+
+/* footer */
+ .back-to-topFooter{
+   height: 50px;
+   background-color: #37475a;
+   text-align: center;
+   
+}
+.back-to-topFooter a{
+   text-decoration: none;
+   color: #FFFFFF;
+   position: relative;
+   top: 17px;
+   font-size: 0.85rem;
+}
+.navFooterVerticalColumn{
+   height: 300px;
+   background-color: #232F3e;
+   display: flex;
+   justify-content: center;
+   justify-content: space-evenly;
+   padding-top: 30px;
+}
+
+.navFooterVerticalColumn a{
+   text-decoration: none;
+   color: #DDDDDD;
+   font-size: 0.9rem;
+  
+}
+.navFooterColHeader{
+   color: #ffffff;
+   font-weight: bolder;
+  
+}
+.navFooterVerticalColumn li{
+   list-style-type: none;
+   padding: 5px;
+}
+/* amazon logo Footer*/
+.navFooterAmazon-logo{
+   background-color: #232F3e;
+   height: 70px;
+   border-top:0.5px solid rgba(97, 96, 97, 0.58);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.navLastFooter{
+   background-color: #0F1111;
+   height: 70px;
+   color: #DDDDDD;
+   padding: 10px 0px 30px;
+   text-align: center;
+   font-size: 0.8rem;
+
+}
+/* last footer */
+.navLastFooter li{
+   display: inline-block;
+   margin-top: 25px;
+
+
+}
+.navLastFooter a{
+      color: #DDDDDD;
+      text-decoration: none;
+       margin: 5px ;
+}
+.navLastFooter p{
+   margin-top: 5px;
+}
+

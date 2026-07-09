@@ -65,6 +65,4 @@ total(2,4,6,789,2653);
 (function () {
     console.log("I am Uzair");
 })();
-
-
-
+ 
