@@ -170,6 +170,7 @@ font-weight: bold;
    display: flex;
    justify-content: space-evenly;
    width: 100%;
+   /* align-items: center; */
    position: relative;
    bottom:200px;
 }
@@ -186,6 +187,7 @@ font-weight: bold;
 
 
 .image-header{
+   /* text-align: center; */ 
    margin: 0px 8px;
    padding: 2px;
 }
@@ -238,6 +240,7 @@ font-weight: bold;
    background-color: #232F3e;
    display: flex;
    justify-content: center;
+   /* align-items: center; */
    justify-content: space-evenly;
    padding-top: 30px;
 }
