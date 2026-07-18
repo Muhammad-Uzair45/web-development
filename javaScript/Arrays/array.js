@@ -68,6 +68,64 @@ console.log(score); */
 //console.log(score.indexOf(86));
 //console.log(furits.concat(score));
 // console.log(score.join("-"));
-//console.log(score.reverse());
 
+/*
+//forEach loop
+let nums = [45,89,67,74,24];
+nums.forEach((num,i,ar)=>{
+    console.log(num,i,ar);
+});
+        */
+//fillter   return new array
+/*
+const ages = [14,45,78,5,23,16,41]
+let newArrary=ages.filter(adults=>adults>18);
+console.log(newArrary);
+console.log(ages);
+
+let users =[
+    {name:"uzair", active:true},
+    {name:"Mamoon", active:false},
+    {name:"Hamid", active:true}
+];
+let activeUser=users.filter(user=>user.active);
+console.log(activeUser);        */
+
+//map  return new array
+/*
+let number=[2,4,8,90,87,94];
+//let sqr=number.map(n=>n**2);
+//console.log(sqr);
+//console.log(number);
+
+//reduce
+
+let n=number.reduce((accum,current)=>{
+      return accum+current;
+},0);
+console.log(n);
+console.log(number); // not orignal change return single value
+  */
+ //set
+ 
+ let value=[2,4,5,5,3,3,2,];
+let unique= [...new Set(value)] ;
+console.log(unique);
+
+
+   let sets=new Set();
+
+  sets.add(20);
+  sets.add(34);
+  sets.add(20);
+  sets.add(8);
+  sets.add(20);
+  //sets.clear();
+ // sets.delete(20);
+
+  //console.log(sets.has(20)); 
+ console.log(sets);
+ for (let set of sets){
+    console.log(set);
+ }
 
