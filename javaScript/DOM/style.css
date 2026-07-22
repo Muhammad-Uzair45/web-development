@@ -1,0 +1,15 @@
+h1{
+    color: rgb(85, 10, 198);
+    background-color: aqua;
+
+}
+button{
+    color:white;
+    background-color:blue;
+    width: 90px;
+    height: 30px;
+
+}
+.listHeading{
+    color: blue;
+}
