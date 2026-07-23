@@ -37,4 +37,32 @@ h1.setAttribute("class","heading");
 //sytle
 const h3 = document.querySelector(".listHeading");
 h3.style.color = "green";
-h3.style.fontSize = "40px";
+h3.style.fontSize = "30px";
+h3.style.backgroundColor = "pink";
+h3.style.textAlign = "center";
+h3.style.width = "150px"
+h3.style.border = "2px solid"
+
+//create Element:
+const item1 = document.createElement("li");
+item1.innerText = "Mobile";
+const list2 = document.getElementById("list2");
+list2.prepend(item1);
+const item2 = document.createElement("li");
+item2.innerText = "Laptop";
+list2.append(item2);
+const item3 = document.createElement("li");
+item3.innerText = "SmartWatch";
+list2.append(item3);
+const price = document.createElement("h4");
+price.innerText = "Under 50k:";
+price.style.color = "red";
+list2.prepend(price);
+
+const heading = document.createElement("h3");
+heading.innerText = "Electronic List:";
+heading.setAttribute("class", "listHeading")
+list2.before(heading);   //after end ma add krta hy
+
+//remove
+item3.remove();
