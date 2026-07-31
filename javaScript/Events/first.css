@@ -1,0 +1,38 @@
+h3{
+    background-color: rgb(84, 241, 139);
+}
+#grand-parent{
+    background-color: blue;
+    border-radius: 5px;
+    height: 250px;  
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parent{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+
+    height: 150px;
+    width: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#child{
+    background-color: rgb(0, 255, 98);
+     border-radius: 5px;
+
+    height: 100px;
+    width: 100px;
+
+}
+button{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 60px;
+
+}
