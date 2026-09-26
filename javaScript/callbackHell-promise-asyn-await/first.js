@@ -78,6 +78,7 @@ promise.then((result) => {
     });
    // console.log(promise);    */
 
+   /*
    const p2 = new Promise( (resolve,reject) => {
    // console.log("1st");
    
@@ -92,9 +93,54 @@ promise.then((result) => {
    p2.then( (res) => {
     console.log(res);
    });
-    //console.log("3rd");
+    //console.log("3rd");            */
 
 
+//  Promise channing
+//     const p3 =  new Promise( (resolve,reject)=>{
+
+//         setTimeout( ()=>{
+//             resolve(2);
+//         }, 2000);
+//     });
+
+//    p3.then( (value)=>{
+//     return value + 5;
+//    })
+//    .then( (value)=>{
+//     return value ** 2;
+//    })
+//    .then( (value)=>{
+//     console.log(value);     //49
+//    });
 
 
+function getdata(dataId){
+
+    return new Promise( (resolve,reject)=>{
+         
+        setTimeout( ()=>{
+        console.log("data  =" ,dataId);
+        resolve("success");
+        
+
+    },2000);
+
+    });
+   
+}
+
+
+// getdata(1).then( ()=>{
+//     return getdata(2);
+// })
+// .then( (data)=>{
+//    console.log(data);
+// })
+
+async function my() {
+    const  n = await getdata(1);
+
+}
+my();
 

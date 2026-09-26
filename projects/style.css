@@ -1,0 +1,243 @@
+/*  CSS VARIABLES  */
+
+:root {
+
+    /* Colors */
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #eff6ff;
+
+    --secondary: #0f172a;
+
+    --white: #ffffff;
+    --black: #020617;
+
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --text-light: #94a3b8;
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
+
+    --border: #e2e8f0;
+
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+
+    /* Shadows */
+    --shadow-sm:
+        0 1px 3px rgba(15, 23, 42, 0.08);
+
+    --shadow-md:
+        0 8px 25px rgba(15, 23, 42, 0.08);
+
+    --shadow-lg:
+        0 20px 50px rgba(15, 23, 42, 0.12);
+
+    --shadow-primary:
+        0 10px 30px rgba(37, 99, 235, 0.25);
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    /* Container */
+    --container-width: 1200px;
+
+    /* Transition */
+    --transition:
+        all 0.3s ease;
+
+}
+
+
+/* 
+    DARK MODE VARIABLES
+    */
+
+body.dark-mode {
+
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-light: #94a3b8;
+
+    --bg-primary: #0f172a;
+    --bg-secondary: #020617;
+    --bg-tertiary: #1e293b;
+
+    --border: #334155;
+
+    --white: #ffffff;
+
+}
+
+
+/* 
+   3. RESET
+    */
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background: var(--bg-primary);
+
+    color: var(--text-primary);
+
+    line-height: 1.6;
+
+    transition: var(--transition);
+
+}
+
+
+/* Remove default links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Remove list styles */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* Images */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Buttons */
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/*  CONTAINER */
+
+.container {
+
+    width: min(
+        100% - 40px,
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+
+}
+
+
+/* 
+    HEADER / NAVBAR
+    */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.dark-mode .header {
+
+    background:
+        rgba(15, 23, 42, 0.92);
+
+}
+
+
+/* Navbar */
+
+.navbar {
+
+    min-height: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+/*  NAVIGATION LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+}
+.nav-links a {
+
+    position: relative;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: var(--text-secondary);
+
+    transition: var(--transition);
+
+}
+
+.nav-links a:hover {
+
+    color: var(--primary);
+
+}
