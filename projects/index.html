@@ -15,6 +15,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
 </head>
 
@@ -105,6 +108,137 @@
                 </div>
 
             </div>
+            
+            <!--  SEARCH BOX   -->
+            <div class="container">
+
+                <form class="search-box" id="searchForm">
+
+                    <!-- Job Search -->
+                    <div class="search-field">
+
+                        <span class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass" ></i>
+                         </span>
+
+                        <div>
+                            <label for="jobSearch">
+                                Search
+                            </label>
+
+                            <input
+                                type="text"
+                                id="jobSearch"
+                                name="job"
+                                placeholder="Job title, skills or company">
+                        </div>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="search-field">
+
+                        <span class="search-icon">
+                            📍
+                        </span>
+
+                        <div>
+                            <label for="location">
+                                Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="City or remote">
+                        </div>
+
+                    </div>
+
+
+                    <!-- Job Type -->
+                    <div class="search-field">
+
+                        <span class="search-icon">
+                            💼
+                        </span>
+
+                        <div>
+                            <label for="jobType">
+                                Job Type
+                            </label>
+
+                            <select id="jobType" name="jobType">
+
+                                <option value="">
+                                    All Types
+                                </option>
+
+                                <option value="internship">
+                                    Internship
+                                </option>
+
+                                <option value="full-time">
+                                    Full Time
+                                </option>
+
+                                <option value="part-time">
+                                    Part Time
+                                </option>
+
+                                <option value="remote">
+                                    Remote
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Search Button -->
+                    <button
+                        type="submit"
+                        class="search-btn">
+                        Search Jobs
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+        
+         <!--  POPULAR SEARCHES  -->
+           
+        <section class="popular-searches">
+
+            <div class="container">
+
+                <p>Popular Searches:</p>
+
+                <div class="search-tags">
+
+                    <button>Frontend Developer</button>
+
+                    <button>Web Developer</button>
+
+                    <button>UI/UX Designer</button>
+
+                    <button>Data Science</button>
+
+                    <button>JavaScript Developer</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
     </main>
 
     
