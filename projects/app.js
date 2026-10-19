@@ -64,3 +64,42 @@ if (themeBtn) {
 
 }
 initializeTheme();
+
+// mobile menu
+
+function toggleMobileMenu() {
+    navLinks.classList.toggle("active");
+    const isOpen = navLinks.classList.contains("active");
+    
+    if (isOpen) {
+        menuBtn.textContent = "✕";
+
+    } else {
+        menuBtn.textContent ="☰"
+    }
+}
+
+if (menuBtn && navLinks) {
+
+    menuBtn.addEventListener(
+        "click",
+         toggleMobileMenu
+    );
+
+}
+
+//close mobile menu when link is clicked
+const navigaionLinks = document.querySelectorAll(".nav-links a");
+
+navigaionLinks.forEach( function (link) {
+
+    link.addEventListener( "click", function () {
+        if (window.innerWidth <= 768 && 
+            navLinks.classList.contains("active")
+        ) {
+            navLinks.classList.remove("active");
+             menuBtn.textContent ="☰";
+        }
+    });
+});
+
