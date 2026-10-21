@@ -51,6 +51,14 @@ function toggleTheme(){
 
         themeBtn.textContent = "☀️";
 
+    }else {
+
+        localStorage.setItem(
+            "jobfinder-theme",
+            "light"
+        );
+
+        themeBtn.textContent = "🌙";
     }
 }
 
@@ -102,4 +110,22 @@ navigaionLinks.forEach( function (link) {
         }
     });
 });
+
+// Favoritos  Job
+
+function getFavorites(){
+    const favorites =  localStorage.getItem("jobFinder-favorites");
+    return favorites 
+    ? JSON.parse(favorites)
+    : [];
+}
+
+function savedFavorites(){
+    localStorage.setItem(
+        "jobFinder-favorites",
+        JSON.stringify(favorites)
+
+    );
+}
+
 
