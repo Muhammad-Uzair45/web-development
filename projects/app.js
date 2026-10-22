@@ -111,6 +111,7 @@ navigaionLinks.forEach( function (link) {
     });
 });
 
+
 // Favoritos  Job
 
 function getFavorites(){
@@ -120,12 +121,90 @@ function getFavorites(){
     : [];
 }
 
-function savedFavorites(){
+function savedFavorites(favorites){
     localStorage.setItem(
         "jobFinder-favorites",
         JSON.stringify(favorites)
 
     );
 }
+
+function toggleFavorites(index,button){
+
+    let favorites = getFavorites();
+    const favoriteIndex = favorites.indexOf(index);
+
+    if(favoriteIndex === -1){
+
+        favorites.push(index);
+        button.textContent = "♥";
+        button.setAttribute(
+            "aria-label",
+            "Remove from favorites"
+        ) 
+
+    } else {
+
+        // Remove favorite
+
+        favorites.splice(
+            favoriteIndex,
+            1
+        );
+
+        button.textContent = "♡";
+
+        button.setAttribute(
+            "aria-label",
+            "Add to favorites"
+        );
+
+    }
+     
+    savedFavorites(favorites);
+
+}
+
+function initializeFavorites(){
+
+    const favorites = getFavorites();
+
+    favoriteButtons.forEach(
+        function (button,index){
+
+            if(favorites.includes(index)){
+               
+                button.textContent = "♥";
+
+                button.setAttribute(
+                    "aria-label",
+                    "Remove from favorites"
+                );
+
+            }
+        }
+
+
+    );
+}
+
+favoriteButtons.forEach(
+    function (button, index) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                toggleFavorites(
+                    index,
+                    button
+                );
+
+            }
+        );
+
+    }
+);
+initializeFavorites();
 
 
